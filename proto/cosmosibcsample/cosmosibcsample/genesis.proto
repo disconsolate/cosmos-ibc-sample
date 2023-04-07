@@ -1,0 +1,12 @@
+syntax = "proto3";
+package disconsolate.cosmosibcsample.cosmosibcsample;
+
+import "gogoproto/gogo.proto";
+import "cosmosibcsample/cosmosibcsample/params.proto";
+
+option go_package = "github.com/disconsolate/cosmos-ibc-sample/x/cosmosibcsample/types";
+
+// GenesisState defines the cosmosibcsample module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package disconsolate.cosmosibcsample.cosmosibcsample;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/disconsolate/cosmos-ibc-sample/x/cosmosibcsample/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
